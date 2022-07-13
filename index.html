@@ -10,37 +10,83 @@
     <title>República Xeque Mate</title>
     
     <!-- Favicon-->
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="assets/xm.ico" />
+    
     <!-- Font Awesome icons (free version)-->
     <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
     <!-- Google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+    
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
 </head>
 <body id="page-top">
-    <!-- Navigation-->
+    <!-- Navegação / Menu -->
     <nav class="navbar navbar-expand-lg bg-dark text-uppercase fixed-top pb-3 mb-1" id="mainNav">
         <div class="container">
             <a class="navbar-brand" href="#page-top">República Xeque Mate</a>
-            <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                Menu
+            <button 
+                class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" 
+                type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#navbarResponsive" 
+                aria-controls="navbarResponsive" 
+                aria-expanded="false" 
+                aria-label="Toggle navigation"
+            >
+                    Menu
                 <i class="fas fa-bars"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#">Inicio</a></li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#arepublica">A república</a></li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Moradores</a></li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Ex-Alunos</a></li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contatos">Contatos</a></li>
+                    <li class="nav-item active mx-0 mx-lg-1">
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#">
+                            Inicio
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown mx-0 mx-lg-1">
+                        <a 
+                            class="nav-link dropdown-toggle py-3 px-0 px-lg-3 rounded" 
+                            id="navbarDropdown" 
+                            role="button" 
+                            aria-haspopup="true" 
+                            aria-expanded="false" 
+                        >
+                            A república
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#historia">História</a>
+                            <a class="dropdown-item" href="#moradores">Moradores</a>
+                            <a class="dropdown-item" href="#exalas">Ex-Alunos</a>
+                        </div>
+                    </li>
+                    <li class="nav-item mx-0 mx-lg-1">
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#calouros">
+                            Sou Calouro
+                        </a>
+                    </li>
+                    <li class="nav-item mx-0 mx-lg-1">
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#hospedagem">
+                            Hospedagem
+                        </a>
+                    </li>
+                    <li class="nav-item mx-0 mx-lg-1">
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#eventos">
+                            Eventos
+                        </a>
+                    </li>
+                    <li class="nav-item mx-0 mx-lg-1">
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contatos">
+                            Contatos
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Seçção sobre a república -->
+    <!-- Seçção sobre a república, moradores e ex-alunos -->
     <section class="page-section bg-white text-black mt-5 mb-0" id="arepublica">
         <div class="container">
             <!-- Head sobre a república -->
@@ -52,20 +98,152 @@
                 <div class="divider-custom-line"></div>
             </div>
             <!-- Conteúdo sobre a história da república-->
-            <div class="row">
-                <div class="col-lg-4 ms-auto">
+            <h3 class="text-center text-uppercase text-black mb-3">História</h3>
+            <div class="row history">
+                <div class="col-lg-5 ms-auto">
                     <p class="lead">
-                        Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.
+                        Fundada em 1979 pelos moradores Renzo, Ibrain, Orcelino, Paulo e Odilon, 
+                        na rua conhecida como rua da caixa d'água, no bairro Água Limpa. Em 1982 
+                        a UFOP iniciou a construção das casas destinadas às repúblicas no Campus 
+                        Universitário, com isso, os então xequemateanos e os moradores da república 
+                        Revertério se juntaram para  fundar a república Unidos por Acaso (UPA), 
+                        contudo logo após decidiram retornar e reiniciar a história da república.
+                    </p>
+                    <p class="lead">
+                        A história da fundação só foi descoberta de fato em 2015, entretanto, como
+                        a data até então utilizada era a 19 de abril de 1982, por conveniência esta
+                        ficou estabelecida como data comemorativa do aniversário da república.
+                    </p>
+                    <p class="lead">
+                        O nome “República Socialista Xeque-Mate” foi dado pelo fundador Renzo pelo
+                        fato de na ocasião ter sido campeão brasileiro e bicampeão mineiro de xadrez.
+                        Com o decorrer do tempo a república passou a se chamar apenas “Xeque-Mate”.
+                        Renzo, já como xequemateano, foi campeão do 1º torneio de xadrez “cidade do
+                        aleijadinho” e campeão brasileiro universitário por equipe em 1983. 
+                    </p>
+                    
+                    <p class="lead">
+                        Duas senhoras se destacaram na história da Xeque-Mate. Uma delas D. Alice,
+                        proprietária da casa, resistiu às pressões familiares quanto a venda do imóvel 
+                        lutando para que a república permanecesse lá enquanto ela fosse viva, sendo 
+                        conhecida pelos moradores da época como seu “anjo da guarda” e D. Nadir, que
+                        era considerada a “mãe” dos xequemateanos durante várias gerações.
+                    </p>
+                    <p class="lead">
+                        No período de 1984 a 1996 só podiam ingressar estudantes de farmácia, desta
+                        data em diante implantou a pluralidade de cursos que foi sadia e proveitosa 
+                        para a república
+                    </p>
+                    <p class="lead">
+                        Em 1995, utilizando recursos próprios ocorreu uma reforma da casa, ampliando
+                        seu espaço físico.
                     </p>
                 </div>
-                <div class="col-lg-4 me-auto">
+                <div class="col-lg-5 me-auto">
                     <p class="lead">
-                        You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!
+                        Nessa mesma época ocorreu a escolha da música “A Filha da Chiquita Bacana” 
+                        de Caetano Veloso como hino da República.
+                    </p>
+                    <p class="lead">
+                        Em 04 de janeiro 1997, devido a um represamento e consequente desmoronamento 
+                        da Rua Padre Rolim causado pelas intensas chuvas que se sucederam no início 
+                        deste ano, e que levou à destruição da maioria das casas da Rua Antônio de Paula Ribas,
+                        a Xeque-Mate teve perda total. Em consequência da destruição da antiga sede 
+                        que ali residia há 15 anos, os moradores se viram obrigados a procurar outra
+                         casa, e com a ajuda de ex alunos mudaram para a vila São José. 
+                    </p>
+                    <p class="lead">
+                        Em busca de uma sede mais satisfatória, a república passou pelas ruas Dr. 
+                        Cláudio de Lima (maio de 1997), Rua Direita (novembro de 1998), Rua Paraná
+                        (novembro de 1999), Rua Getúlio Vargas (outubro de 2012), Rua Conselheiro Quintiliano 
+                        (abril de 2014) e finalmente Rua Campus Universitário (setembro de 2015).
+                    </p>
+                    <p class="lead">
+                        Enquanto na Rua Paraná, a república ficou conhecida devido a realização de inúmeras
+                        festas e eventos, dentre essas destacaram-se o Carnaval e a Festa do 12. Em 2002 
+                        foi realizada uma assembléia entre os moradores e ex-alunos para tornar o sonho
+                        da sede própria realidade. 
+                    </p>
+                    <p class="lead">
+                        O sonho começou a tomar corpo em julho de 2010 com um acordo entre a Associação
+                        de Moradores e Ex-alunos da República Xeque Mate e a UFOP, onde esta última, 
+                        em situação inédita, doaria um terreno para que a Associação pudesse construir
+                        uma casa e se tornar uma república federal, fazendo história ao ser a primeira
+                        república a construir sua sede com recursos próprios. A inauguração da sede 
+                        no Campus Universitário aconteceu no dia 11 de outubro de 2015. 
                     </p>
                 </div>
             </div>
         </div>
+        <div class="container bg-dark">
+        </div>
     </section>
+    
+    <!-- Seção sobre vagas e fotos da casa -->
+    <section class="page-section bg-dark text-white mt-5 mb-0" id="calouros">
+        <div class="container">
+            <h2 class="page-section-heading text-center text-uppercase text-white">Vagas para calouros</h2>
+            <div class="divider-custom divider-light">
+                <div class="divider-custom-line"></div>
+            </div>
+            <h3 class="text-center text-uppercase text-white mb-3">Faça parte da família Xequemateana!</h3>
+            <ul>
+                <li>Pré-requisitos para entrar na casa:</li>
+                <div class="text-center">
+                    Alunos do sexo masculino, regularmente matriculados em qualquer 
+                    curso da Universidade Federal de Ouro Preto pode ingressar na República 
+                    para um período de adaptação.
+                </div>
+                <br />
+                <li>Período de adaptação (candidatos a morador):</li>
+                <p class="mx-lg-4">
+                    Com duração média de 5 meses (dependendo do desenvolvimento do calouro).
+                    Nesta fase também conhecida como “batalha”, o calouro deve demonstrar 
+                    responsabilidades com os estudos, zelo com o ambiente da república e 
+                    um bom relacionamento com os moradores, ex-alunos e demais pessoas que
+                    fazem parte do meio social republicano. É importante que o calouro demonstre
+                    interesse em fazer com que a casa progrida sempre e respeitando as tradições.
+                    Para que o candidato a morador se torne morador, ele deve atender à esses e
+                    outros requisitos e regras internas da casa.
+                </p>
+                <br />
+                <li>
+                    Ideais da república:
+                </li>
+                <div class="">
+                    <ol>
+                        <li>
+                            Respeito ao próximo e à seus direitos;
+                        </li>
+                        <li>
+                            Zelo pela conservação e manutenção da república;
+                        </li>
+                        <li>
+                            Responsabilidade com o patrimônio;
+                        </li>
+                        <li>
+                            Zelo pela ordem e disciplina da República;
+                        </li>
+                        <li>
+                            Respeitar a ordem de chegada dos residentes moradores à república no dia a dia, na escolha de quartos, móveis e nos aspectos referentes à representação da república; 	
+                        </li>
+                        <li>
+                            Contribuição e participação dos eventos promovidos pela república;
+                        </li>
+                        <li>
+                            Empenho na realização das tarefas designadas;                    
+                        </li>
+                    </ol>
+                </div>
+            </ul>
+        </div>
+    </section>
+
+    <!--  seção sobre hospedagem-->
+    <section class="page-section bg-white mt-5 mb-0" id="hospedagem">
+        <h2 class="page-section-heading text-center text-uppercase text-black">Hospedagem</h2>
+    </section>
+
     <!-- Footer / Contatos -->
     <footer class="footer text-center" id="contatos">
         <div class="container">
