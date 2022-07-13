@@ -23,7 +23,82 @@
 </head>
 <body id="page-top">
     <!-- Navegação / Menu -->
-    <nav class="navbar navbar-expand-lg bg-dark text-uppercase fixed-top pb-3 mb-1" id="mainNav">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-uppercase fixed-top pb-3 mb-1" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="#page-top">República Xeque Mate</a>
+            <button 
+                class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" 
+                type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#navbarResponsive" 
+                aria-controls="navbarResponsive" 
+                aria-expanded="false" 
+                aria-label="Toggle navigation"
+            >
+                    Menu
+                <i class="fas fa-bars"></i>
+            </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav">
+                <li class="nav-item active mx-0 mx-lg-1">
+                    <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#">
+                        Inicio
+                    </a>
+                </li>
+                <li class="nav-item dropdown mx-0 mx-lg-1 mt-2">
+                    <a 
+                        class="nav-link dropdown-toggle px-0 px-lg-3 rounded" 
+                        href="#" 
+                        id="navbarDarkDropdownMenuLink" 
+                        role="button" 
+                        data-bs-toggle="dropdown" 
+                        aria-expanded="false"
+                    >
+                        A república
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                        <li><a class="dropdown-item" href="#historia">História</a></li>
+                        <li><a class="dropdown-item" href="#moradores">Moradores</a></li>
+                        <li><a class="dropdown-item" href="#exalas">Ex-Alunos</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item mx-0 mx-lg-1">
+                    <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#calouros">
+                        Sou Calouro
+                    </a>
+                </li>
+                <li class="nav-item mx-0 mx-lg-1">
+                    <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#hospedagem">
+                        Hospedagem
+                    </a>
+                </li>
+                <li class="nav-item dropdown mx-0 mx-lg-1 mt-2">
+                    <a 
+                        class="nav-link dropdown-toggle px-0 px-lg-3 rounded"
+                        href="#" 
+                        id="navbarDarkDropdownMenuLink" 
+                        role="button" 
+                        data-bs-toggle="dropdown" 
+                        aria-expanded="false"
+                    >
+                        Eventos
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">Carnaval</a></li>
+                        <li><a class="dropdown-item" href="#">Rock dos Solteiros</a></li>
+                        <li><a class="dropdown-item" href="#">Doze de Outubro</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item mx-0 mx-lg-1">
+                    <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contatos">
+                        Contatos
+                    </a>
+                </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <!-- <nav class="navbar navbar-expand-lg bg-dark text-uppercase fixed-top pb-3 mb-1" id="mainNav">
         <div class="container">
             <a class="navbar-brand" href="#page-top">República Xeque Mate</a>
             <button 
@@ -55,11 +130,11 @@
                         >
                             A república
                         </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#historia">História</a>
-                            <a class="dropdown-item" href="#moradores">Moradores</a>
-                            <a class="dropdown-item" href="#exalas">Ex-Alunos</a>
-                        </div>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item mx-0 mx-lg-1">
                         <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#calouros">
@@ -84,7 +159,7 @@
                 </ul>
             </div>
         </div>
-    </nav>
+    </nav> -->
 
     <!-- Seçção sobre a república, moradores e ex-alunos -->
     <section class="page-section bg-white text-black mt-5 mb-0" id="arepublica">
@@ -99,7 +174,7 @@
             </div>
             <!-- Conteúdo sobre a história da república-->
             <h3 class="text-center text-uppercase text-black mb-3">História</h3>
-            <div class="row history">
+            <div class="row" id="historia">
                 <div class="col-lg-5 ms-auto">
                     <p class="lead">
                         Fundada em 1979 pelos moradores Renzo, Ibrain, Orcelino, Paulo e Odilon, 
@@ -184,12 +259,12 @@
         <div class="container">
             <h2 class="page-section-heading text-center text-uppercase text-white">Vagas para calouros</h2>
             <div class="divider-custom divider-light">
-                <div class="divider-custom-line"></div>
+                <div class="divider-custom-line my-4"></div>
             </div>
-            <h3 class="text-center text-uppercase text-white mb-3">Faça parte da família Xequemateana!</h3>
+            <h3 class="text-center text-uppercase text-white my-3">Faça parte da família Xequemateana!</h3>
             <ul>
                 <li>Pré-requisitos para entrar na casa:</li>
-                <div class="text-center">
+                <div class="mx-lg-4">
                     Alunos do sexo masculino, regularmente matriculados em qualquer 
                     curso da Universidade Federal de Ouro Preto pode ingressar na República 
                     para um período de adaptação.
@@ -241,7 +316,30 @@
 
     <!--  seção sobre hospedagem-->
     <section class="page-section bg-white mt-5 mb-0" id="hospedagem">
-        <h2 class="page-section-heading text-center text-uppercase text-black">Hospedagem</h2>
+        <div class="container">
+            <h2 class="page-section-heading text-center text-uppercase text-black">Hospedagem</h2>
+            <div class="hospedagem">
+                <div class="col-lg-12">
+                    <p class="lead">
+                        Ambiente seguro, limpo e organizado! É ideal para grupos que buscam gastar pouco com hospedagem! 
+                        Os quartos são amplos, possuímos Wi-Fi e o custo benefício é o melhor possível. A localização é 
+                        privilegiada, bem próximo ao Campus Universitário da UFOP.
+                    </p>
+                    <p class="lead">
+                        Aproveite essa experiência incrível, vivencie a vida republicana! Conheça mais sobre o dia a 
+                        dia dos moradores, sobre a nossa história e como é a organização dessa tradicional república 
+                        fundada em 1982.
+                    </p>
+                    <p class="lead">
+                        Se você está visitando a região de Ouro Preto para eventos acadêmicos (congresso, fórum, s
+                        impósio, conferência, seminário etc). Ou veio participar de eventos esportivos (Engenharíadas,
+                        Encontro do Interior de Minas - JIMI, ou veio ainda curtir o Festival de Inverno de Ouro Preto
+                        e Mariana, Festival de Internacional Tudo é Jazz, Mostra de Cinema - CINEOP, Semana Santa ou
+                        algum outro evento cultural incrível dessa cidade, entre em contato e confirme já a sua reserva!
+                    </p>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Footer / Contatos -->
@@ -262,9 +360,9 @@
                 <!-- Icones para redes sociais -->
                 <div class="col-lg-6 mb-5 mb-lg-0">
                     <h4 class="text-uppercase mb-4">Redes Sociais</h4>
-                    <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-facebook-f"></i></a>
-                    <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-instagram"></i></a>
-                    <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-whatsapp"></i></a>
+                    <a class="btn btn-outline-light btn-social mx-1" href="https://www.facebook.com/republicaxeque.mate"><i class="fab fa-fw fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-light btn-social mx-1" href="https://www.instagram.com/repxequemateop/"><i class="fab fa-fw fa-instagram"></i></a>
+                    <a class="btn btn-outline-light btn-social mx-1" href="https://api.whatsapp.com/send?phone=5531987820363&amp" target="_blank"><i class="fab fa-fw fa-whatsapp"></i></a>
                     <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-regular fa-envelope"></i></a>
                 </div>
             </div>
@@ -279,7 +377,6 @@
 
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-   
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
    
