@@ -35,7 +35,6 @@
                 aria-expanded="false" 
                 aria-label="Toggle navigation"
             >
-                    Menu
                 <i class="fas fa-bars"></i>
             </button>
           <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -51,12 +50,14 @@
                         href="#" 
                         id="navbarDarkDropdownMenuLink" 
                         role="button" 
-                        data-bs-toggle="dropdown" 
+                        data-bs-toggle="dropdown"
+                        data-bs-target="rep"
+                        aria-haspopup="true"
                         aria-expanded="false"
                     >
                         A república
                     </a>
-                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                    <ul class="dropdown-menu dropdown-menu-dark" id="rep" aria-labelledby="navbarDarkDropdownMenuLink">
                         <li><a class="dropdown-item" href="#historia">História</a></li>
                         <li><a class="dropdown-item" href="#moradores">Moradores</a></li>
                         <li><a class="dropdown-item" href="#exalas">Ex-Alunos</a></li>
@@ -78,12 +79,13 @@
                         href="#" 
                         id="navbarDarkDropdownMenuLink" 
                         role="button" 
-                        data-bs-toggle="dropdown" 
+                        data-bs-toggle="dropdown"
+                        data-bs-target="event" 
                         aria-expanded="false"
                     >
                         Eventos
                     </a>
-                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                    <ul class="dropdown-menu dropdown-menu-dark" id="event" aria-labelledby="navbarDarkDropdownMenuLink">
                         <li><a class="dropdown-item" href="#">Carnaval</a></li>
                         <li><a class="dropdown-item" href="#">Rock dos Solteiros</a></li>
                         <li><a class="dropdown-item" href="#">Doze de Outubro</a></li>
@@ -98,68 +100,6 @@
           </div>
         </div>
     </nav>
-    <!-- <nav class="navbar navbar-expand-lg bg-dark text-uppercase fixed-top pb-3 mb-1" id="mainNav">
-        <div class="container">
-            <a class="navbar-brand" href="#page-top">República Xeque Mate</a>
-            <button 
-                class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" 
-                type="button" 
-                data-bs-toggle="collapse" 
-                data-bs-target="#navbarResponsive" 
-                aria-controls="navbarResponsive" 
-                aria-expanded="false" 
-                aria-label="Toggle navigation"
-            >
-                    Menu
-                <i class="fas fa-bars"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item active mx-0 mx-lg-1">
-                        <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#">
-                            Inicio
-                        </a>
-                    </li>
-                    <li class="nav-item dropdown mx-0 mx-lg-1">
-                        <a 
-                            class="nav-link dropdown-toggle py-3 px-0 px-lg-3 rounded" 
-                            id="navbarDropdown" 
-                            role="button" 
-                            aria-haspopup="true" 
-                            aria-expanded="false" 
-                        >
-                            A república
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item mx-0 mx-lg-1">
-                        <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#calouros">
-                            Sou Calouro
-                        </a>
-                    </li>
-                    <li class="nav-item mx-0 mx-lg-1">
-                        <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#hospedagem">
-                            Hospedagem
-                        </a>
-                    </li>
-                    <li class="nav-item mx-0 mx-lg-1">
-                        <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#eventos">
-                            Eventos
-                        </a>
-                    </li>
-                    <li class="nav-item mx-0 mx-lg-1">
-                        <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contatos">
-                            Contatos
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav> -->
 
     <!-- Seçção sobre a república, moradores e ex-alunos -->
     <section class="page-section bg-white text-black mt-5 mb-0" id="arepublica">
@@ -347,23 +287,27 @@
         <div class="container">
             <div class="row">
                 <!-- Informações sobre localização e telefone-->
-                <div class="col-lg-6 mb-5 mb-lg-0">
+                <div class="col-lg-6 mb-5 mb-lg-0 py-5">
                     <h4 class="text-uppercase mb-4">Localização</h4>
-                    <p class="lead mb-0">
-                        Rua: Campus Universitário, 7C
+                    <p class="lead mb-0 text-center">
+                        Rua Quatorze, 7C
                         <br />
-                        Bauxita, Ouro Preto - MG. CEP: 35400-000
+                        Bauxita, Ouro Preto - MG.
+                        <br />
                         <br />
                         Tel: (31) 9XXXX-XXXX
                     </p>
                 </div>
                 <!-- Icones para redes sociais -->
-                <div class="col-lg-6 mb-5 mb-lg-0">
+                <div class="col-lg-6 mb-5 mb-lg-0 py-5">
                     <h4 class="text-uppercase mb-4">Redes Sociais</h4>
-                    <a class="btn btn-outline-light btn-social mx-1" href="https://www.facebook.com/republicaxeque.mate"><i class="fab fa-fw fa-facebook-f"></i></a>
-                    <a class="btn btn-outline-light btn-social mx-1" href="https://www.instagram.com/repxequemateop/"><i class="fab fa-fw fa-instagram"></i></a>
+                    <a class="btn btn-outline-light btn-social mx-1" target="_blank" href="https://www.facebook.com/republicaxeque.mate"><i class="fab fa-fw fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-light btn-social mx-1" target="_blank" href="https://www.instagram.com/repxequemateop/"><i class="fab fa-fw fa-instagram"></i></a>
                     <a class="btn btn-outline-light btn-social mx-1" href="https://api.whatsapp.com/send?phone=5531987820363&amp" target="_blank"><i class="fab fa-fw fa-whatsapp"></i></a>
-                    <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-regular fa-envelope"></i></a>
+                    <br />
+                    <p class="mt-4">
+                        Email: repxequemate@gmail.com
+                    </p>
                 </div>
             </div>
         </div>
