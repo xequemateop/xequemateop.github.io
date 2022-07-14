@@ -163,18 +163,18 @@ h6.heading {
   padding: 5rem 0;
 }
 
-.btn-calouro {
+.btn-xm {
   max-width: 25rem;
-  background-color: #25d055;
 }
 
-.btn-calouro a {
+.btn-xm a.btn-calouro {
   font-size: 1.2rem;
   font-weight: bold;
   color: #FFF;
+  background-color: #20d340;
 }
-.btn-calouro a:hover {
-  background-color: #25d355;
+.btn-xm a.btn-calouro:hover {
+  background-color: #20d055;
   border: none;
 }
 
