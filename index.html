@@ -23,11 +23,11 @@
 
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body id="page-top">
+<body id="pagetop">
     <!-- Navegação / Menu -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-opacity-75 bg-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-opacity-75 bg-dark fixed-top" id="mainmenu">
         <div class="container col">
-            <a class="navbar-brand col-6" href="#">Navbar</a>
+            <a class="navbar-brand col-6" href="#">República Xeque Mate</a>
             <button
                 class="navbar-toggler"
                 type="button"
@@ -42,7 +42,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link text-uppercase active" aria-current="page" href="#">Inicio</a>
+                        <a class="nav-link text-uppercase" aria-current="pagetop" href="#pagetop">Inicio</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a
@@ -56,19 +56,21 @@
                             A república
                         </a>
                         <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><hr class="dropdown-divider" /></li>
+                            <li><a class="dropdown-item text-uppercase" href="#historia">História</a></li>
+                            <li><a class="dropdown-item text-uppercase" href="#moradores">Moradores</a></li>
                             <li>
-                            <a class="dropdown-item" href="#">Something else here</a>
+                                <a class="dropdown-item text-uppercase" href="#exalas">Ex-alunos</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item text-uppercase" href="#casa">A casa</a>
                             </li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-uppercase text-nowrap" href="#">Sou calouro</a>
+                        <a class="nav-link text-uppercase text-nowrap" href="#calouros">Sou calouro</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-uppercase" href="#">Hospedagem</a>
+                        <a class="nav-link text-uppercase" href="#hospedagem">Hospedagem</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a
@@ -82,13 +84,15 @@
                             Eventos
                         </a>
                         <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><hr class="dropdown-divider" /></li>
+                            <li><a class="dropdown-item text-uppercase" href="#">Carnaval</a></li>
+                            <li><a class="dropdown-item text-uppercase" href="#">Rock dos Solteiros</a></li>
                             <li>
-                                <a class="dropdown-item" href="#">Something else here</a>
+                                <a class="dropdown-item text-uppercase" href="#">Doze de Outubro</a>
                             </li>
                         </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase" href="#contatos">Contatos</a>
                     </li>
                 </ul>
             </div>
@@ -96,10 +100,10 @@
     </nav>
 
     <!-- Seçção sobre a república, moradores e ex-alunos -->
-    <section class="bg-white text-black mt-5 mb-0" id="arepublica">
+    <section class="page-section bg-white text-black mt-5 mb-0" id="arepublica">
         <div class="container">
             <!-- Head sobre a república -->
-            <h2 class="text-center text-uppercase text-black">A república</h2>
+            <h2 class="heading text-center text-uppercase text-black">A república</h2>
             <!-- Icone divisor-->
             <div class="divider-custom divider-dark">
                 <div class="divider-custom-line"></div>
@@ -107,8 +111,8 @@
                 <div class="divider-custom-line"></div>
             </div>
             <!-- Conteúdo sobre a história da república-->
-            <h3 class="text-center text-uppercase text-black mb-3">História</h3>
-            <div class="row" id="historia">
+            <h3 class="heading text-center text-uppercase text-black mb-3" id="historia">História</h3>
+            <div class="row border border-dark xm-card">
                 <div class="col-lg-5 ms-auto">
                     <p class="article">
                         Fundada em 1979 pelos moradores Renzo, Ibrain, Orcelino, Paulo e Odilon, 
@@ -189,23 +193,23 @@
     </section>
     
     <!-- Seção sobre vagas e fotos da casa -->
-    <section class="bg-dark text-white mt-5 mb-0" id="calouros">
+    <section class="page-section bg-dark text-white mt-5 mb-0" id="calouros">
         <div class="container">
-            <h2 class="text-center text-uppercase text-white">Vagas para calouros</h2>
+            <h2 class="heading text-center text-uppercase text-white">Vagas para calouros</h2>
             <div class="divider-custom divider-light">
                 <div class="divider-custom-line my-4"></div>
             </div>
-            <h3 class="text-center text-uppercase text-white my-3">Faça parte da família Xequemateana!</h3>
-            <ul>
+            <h3 class="heading text-center text-uppercase text-white my-3">Faça parte da família Xequemateana!</h3>
+            <ul type="none">
                 <li>Pré-requisitos para entrar na casa:</li>
-                <div class="mx-lg-4">
+                <div class="mx-4 mt-3 text-justify">
                     Alunos do sexo masculino, regularmente matriculados em qualquer 
                     curso da Universidade Federal de Ouro Preto pode ingressar na República 
                     para um período de adaptação.
                 </div>
                 <br />
                 <li>Período de adaptação (candidatos a morador):</li>
-                <p class="mx-lg-4">
+                <p class="mx-4 mt-3 text-justify">
                     Com duração média de 5 meses (dependendo do desenvolvimento do calouro).
                     Nesta fase também conhecida como “batalha”, o calouro deve demonstrar 
                     responsabilidades com os estudos, zelo com o ambiente da república e 
@@ -219,41 +223,51 @@
                 <li>
                     Ideais da república:
                 </li>
-                <div class="">
-                    <ol>
-                        <li>
+                <div class="mt-3">
+                    <ul class="list">
+                        <li class="mt-3">
                             Respeito ao próximo e à seus direitos;
                         </li>
-                        <li>
+                        <li class="mt-3">
                             Zelo pela conservação e manutenção da república;
                         </li>
-                        <li>
+                        <li class="mt-3">
                             Responsabilidade com o patrimônio;
                         </li>
-                        <li>
+                        <li class="mt-3">
                             Zelo pela ordem e disciplina da República;
                         </li>
-                        <li>
-                            Respeitar a ordem de chegada dos residentes moradores à república no dia a dia, na escolha de quartos, móveis e nos aspectos referentes à representação da república; 	
+                        <li class="mt-3">
+                            Respeitar a ordem de chegada dos residentes moradores à república no dia a dia, na esculha de quartos, móveis e nos aspectos referentes à representação da república; 	
                         </li>
-                        <li>
+                        <li class="mt-3">
                             Contribuição e participação dos eventos promovidos pela república;
                         </li>
-                        <li>
+                        <li class="mt-3">
                             Empenho na realização das tarefas designadas;                    
                         </li>
-                    </ol>
+                    </ul>
                 </div>
             </ul>
+            <div class="btn-calouro d-grid mx-auto mt-5">
+                <a 
+                    class="btn whatsapp py-3 px-5" 
+                    href="https://api.whatsapp.com/send?phone=5531987820363&amp" 
+                    target="_blank"
+                >
+                    <i class="fab fa-whatsapp mx-2"></i>
+                    Fale com um morador
+                </a>
+            </div>
         </div>
     </section>
 
     <!--  seção sobre hospedagem-->
-    <section class="bg-white mt-1 mb-0" id="hospedagem">
+    <section class="page-section bg-white mt-1 mb-0" id="hospedagem">
         <div class="container">
-            <h2 class="text-center text-uppercase text-black pb-5">Hospedagem</h2>
-            <div class="hospedagem">
-                <div class="col-lg-12">
+            <h2 class="heading text-center text-uppercase text-black pb-5">Hospedagem</h2>
+            <div class="hospedagem xm-card border border-dark row justify-content-center">
+                <div class="col-11 col-lg-10">
                     <p class="article">
                         Ambiente seguro, limpo e organizado! É ideal para grupos que buscam gastar pouco com hospedagem! 
                         Os quartos são amplos, possuímos Wi-Fi e o custo benefício é o melhor possível. A localização é 
@@ -277,12 +291,12 @@
     </section>
 
     <!-- Footer / Contatos -->
-    <footer class="footer text-center bg-secondary-gray text-white" id="contatos">
+    <footer class="page-section text-center bg-secondary-gray text-white" id="contatos">
         <div class="container">
             <div class="row">
                 <!-- Informações sobre localização e telefone-->
                 <div class="col-lg-6 mb-5 mb-lg-0 py-5">
-                    <h4 class="text-uppercase mb-4">Localização</h4>
+                    <h4 class="heading text-uppercase mb-4">Localização</h4>
                     <p class="article mb-0 text-center">
                         Rua Quatorze, 7C
                         <br />
@@ -294,13 +308,13 @@
                 </div>
                 <!-- Icones para redes sociais -->
                 <div class="col-lg-6 mb-5 mb-lg-0 py-5">
-                    <h4 class="text-uppercase mb-4">Redes Sociais</h4>
-                    <a class="btn btn-outline-light btn-social mx-1" target="_blank" href="https://www.facebook.com/republicaxeque.mate"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-outline-light btn-social mx-1" target="_blank" href="https://www.instagram.com/repxequemateop/"><i class="fab fa-instagram"></i></a>
-                    <a class="btn btn-outline-light btn-social mx-1" href="https://api.whatsapp.com/send?phone=5531987820363&amp" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    <h4 class="heading text-uppercase mb-4">Redes Sociais</h4>
+                    <a class="btn btn-outline-light btn-social facebook mx-1" target="_blank" href="https://www.facebook.com/republicaxeque.mate"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-light btn-social instagram mx-1" target="_blank" href="https://www.instagram.com/repxequemateop/"><i class="fab fa-instagram"></i></a>
+                    <a class="btn btn-outline-light btn-social whatsapp mx-1" href="https://api.whatsapp.com/send?phone=5531987820363&amp" target="_blank"><i class="fab fa-whatsapp"></i></a>
                     <br />
                     <p class="mt-4">
-                        Email: repxequemate@gmail.com
+                        <strong class="p-2 text-uppercase">e-mail:</strong> <addres>repxequemate@gmail.com</addres>
                     </p>
                 </div>
             </div>
