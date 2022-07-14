@@ -201,3 +201,41 @@ h6.heading {
 .page-section {
   padding: 5rem 0;
 }
+
+/* =============================== Carousel | Slider ====================================== */
+
+.MultiCarousel { 
+  float: left; 
+  overflow: hidden; 
+  padding: 15px; 
+  width: 100%; 
+  position:relative; 
+}
+.MultiCarousel .MultiCarousel-inner { 
+  transition: 1s ease all; 
+  float: left; 
+}
+.MultiCarousel .MultiCarousel-inner .item { 
+  float: left;
+}
+.MultiCarousel .MultiCarousel-inner .item > div { 
+  text-align: center; 
+  padding:10px; 
+  margin:10px; 
+  background: var(--secondary-gray); 
+  color:#FFF;
+}
+.MultiCarousel .leftLst, .MultiCarousel .rightLst { 
+  position:absolute; border-radius:50%;
+  top:calc(50% - 20px); 
+}
+.MultiCarousel .leftLst { 
+  left:0; 
+}
+.MultiCarousel .rightLst { 
+  right:0; 
+}
+.MultiCarousel .leftLst.over, .MultiCarousel .rightLst.over { 
+  pointer-events: none; 
+  background:#ccc; 
+}
