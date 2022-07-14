@@ -257,3 +257,9 @@ header.header {
   pointer-events: none; 
   background:#ccc; 
 }
+
+/* =================================== Fotos ======================================== */
+img.img-thumb{
+  max-width: 400px;
+  max-height: 400px;
+}
