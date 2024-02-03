@@ -26,7 +26,7 @@
 <body id="pagetop">
     <!-- Navegação / Menu -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-opacity-75 bg-primary-gray fixed-top" id="mainmenu">
-        <div class="container col">
+        <div class="container col" id="container-menu">
             <a class="navbar-brand col-6" href="#">República Xeque Mate</a>
             <button
                 class="navbar-toggler"
@@ -72,25 +72,6 @@
                     <li class="nav-item">
                         <a class="nav-link text-uppercase" href="#hospedagem">Hospedagem</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a
-                            class="nav-link dropdown-toggle text-uppercase"
-                            href="#"
-                            id="navbarDropdown"
-                            role="button"
-                            data-bs-toggle="dropdown"
-                            aria-expanded="false"
-                        >
-                            Eventos
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-dark bg-primary-gray" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item text-uppercase" href="#">Carnaval</a></li>
-                            <li><a class="dropdown-item text-uppercase" href="#">Rock dos Solteiros</a></li>
-                            <li>
-                                <a class="dropdown-item text-uppercase" href="#">Doze de Outubro</a>
-                            </li>
-                        </ul>
-                    </li>
                     <li class="nav-item">
                         <a class="nav-link text-uppercase" href="#contatos">Contatos</a>
                     </li>
@@ -99,9 +80,7 @@
         </div>
     </nav>
     <header class="header">
-        <div>
-            <img src="assets/img/capa.jpeg" class="d-block w-100" alt="Capa">
-        </div>
+        <div id="photo-background"></div>
     </header>
     <!-- Seçção sobre a república, moradores e ex-alunos -->
     <section class="page-section bg-white text-black mb-0" id="arepublica">
@@ -688,83 +667,130 @@
     </section>
     <section class="page-section mt-5 mb-5" id="casa">
         <div class="container">
-
             <div class="divider-custom divider-dark">
                 <div class="divider-custom-line"></div>
                 <div class="divider-custom-icon"><i class="fa-solid fa-chess-bishop"></i></div>
                 <div class="divider-custom-line"></div>
             </div>
-            <!-- Conteúdo sobre a história da república-->
             <h3 class="heading text-center text-uppercase text-black mb-3">Fotos da casa</h3>
-            <div class="divider-custom divider-dark">
-                <div class="divider-custom-line mb-5"></div>
+            <div class="row">
+                <div class="MultiCarousel" data-items="1,3,5,6" data-slide="1" id="MultiCarousel"  data-interval="1000">
+                    <div class="MultiCarousel-inner">
+                        <div class="item">
+                            <div class="pad15">
+                                <img src="assets/img/casa/sala1.jpeg" class="d-block w-100" alt="Elaine">
+                            </div>
+                            <p class="text-center fw-bold">Sala</p>
+                        </div>
+                        <div class="item">
+                            <div class="pad15">
+                                <img src="assets/img/casa/sala2.jpeg" class="d-block w-100" alt="Nelma">
+                            </div>
+                            <p class="text-center fw-bold">Sala</p>
+                        </div>
+                        <div class="item">
+                            <div class="pad15">
+                                <img src="assets/img/casa/sala3.jpeg" class="d-block w-100" alt="Roncoio">
+                            </div>
+                            <p class="text-center fw-bold">Sala</p>
+                        </div>
+                        <div class="item">
+                            <div class="pad15">
+                                <img src="assets/img/casa/cozinha1.jpeg" class="d-block w-100" alt="Andréia">
+                            </div>
+                            <p class="text-center fw-bold">Cozinha</p>
+                        </div>
+                        <div class="item">
+                            <div class="pad15">
+                                <img src="assets/img/casa/cozinha2.jpeg" class="d-block w-100" alt="Juliana">
+                            </div>
+                            <p class="text-center fw-bold">Cozinha</p>
+                        </div>
+                        <div class="item">
+                            <div class="pad15">
+                                <img src="assets/img/casa/q_estudos1.jpeg" class="d-block w-100" alt="Dadó">
+                            </div>
+                            <p class="text-center fw-bold">Sala de estudos</p>
+                        </div>
+                        <div class="item">
+                            <div class="pad15">
+                                <img src="assets/img/casa/q_estudos2.jpeg" class="d-block w-100" alt="Tyrin">
+                            </div>
+                            <p class="text-center fw-bold">Sala de estudos</p>
+                        </div>
+                        <div class="item">
+                            <div class="pad15">
+                                <img src="assets/img/casa/q1.jpeg" class="d-block w-100" alt="Gláucia">
+                            </div>
+                            <p class="text-center fw-bold">Quarto 1</p>
+                        </div>
+                        <div class="item">
+                            <div class="pad15">
+                                <img src="assets/img/casa/q2.jpeg" class="d-block w-100" alt="Zamorano">
+                            </div>
+                            <p class="text-center fw-bold">Quarto 2</p>
+                        </div>
+                        <div class="item">
+                            <div class="pad15">
+                                <img src="assets/img/casa/q3.jpeg" class="d-block w-100" alt="Milena">
+                            </div>
+                            <p class="text-center fw-bold">Quarto 3</p>
+                        </div>
+                        <div class="item">
+                            <div class="pad15">
+                                <img src="assets/img/casa/q4.jpeg" class="d-block w-100" alt="Moá">
+                            </div>
+                            <p class="text-center fw-bold">Quarto 4</p>
+                        </div>
+                        <div class="item">
+                            <div class="pad15">
+                                <img src="assets/img/casa/q5.jpeg" class="d-block w-100" alt="Porra-Leo">
+                            </div>
+                            <p class="text-center fw-bold">Quarto 5</p>
+                        </div>
+                        <div class="item">
+                            <div class="pad15">
+                                <img src="assets/img/casa/q6.jpeg" class="d-block w-100" alt="Pisão">
+                            </div>
+                            <p class="text-center fw-bold">Quarto 6</p>
+                        </div>
+                        <div class="item">
+                            <div class="pad15">
+                                <img src="assets/img/casa/b1.jpeg" class="d-block w-100" alt="PH">
+                            </div>
+                            <p class="text-center fw-bold">Banheiro 1</p>
+                        </div>
+                        <div class="item">
+                            <div class="pad15">
+                                <img src="assets/img/casa/b2.jpeg" class="d-block w-100" alt="PH">
+                            </div>
+                            <p class="text-center fw-bold">Banheiro 2</p>
+                        </div>
+                        <div class="item">
+                            <div class="pad15">
+                                <img src="assets/img/casa/vestiario.jpeg" class="d-block w-100" alt="PH">
+                            </div>
+                            <p class="text-center fw-bold">Vestiário</p>
+                        </div>
+                        <div class="item">
+                            <div class="pad15">
+                                <img src="assets/img/casa/hall.jpeg" class="d-block w-100" alt="PH">
+                            </div>
+                            <p class="text-center fw-bold">Hall</p>
+                        </div>
+                        <div class="item">
+                            <div class="pad15">
+                                <img src="assets/img/casa/lavanderia.jpeg" class="d-block w-100" alt="PH">
+                            </div>
+                            <p class="text-center fw-bold">Lavanderia</p>
+                        </div>
+                    </div>
+                    
+                    <button class="btn btn-light mx-4 leftLst"><i class="fa-solid fa-chevron-left"></i></button>
+                    <button class="btn btn-light mx-4 rightLst"><i class="fa-solid fa-chevron-right"></i></button>
+                </div>
             </div>
 
-            <div class="row justify-content-center border border-dark xm-card">
-                <h4 class="heading text-center text-uppercase">Sala</h4>
-                <div class="col-12 col-md-4 xm-card p-5">
-                    <img src="assets/img/casa/sala1.jpeg" alt="Sala" class="d-block w-100">
-                </div>
-                <div class="col-12 col-md-4 xm-card p-5">
-                    <img src="assets/img/casa/sala2.jpeg" alt="Sala" class="d-block w-100">
-                </div>
-                <div class="col-12 col-md-4 xm-card p-5">
-                    <img src="assets/img/casa/sala3.jpeg" alt="Sala" class="d-block w-100">
-                </div>
-                <h4 class="heading text-center text-uppercase">Cozinha</h4>
-                <div class="col-12 col-md-4 xm-card p-5">
-                    <img src="assets/img/casa/cozinha1.jpeg" alt="cozinha" class="d-block w-100">
-                </div>
-                <div class="col-12 col-md-4 xm-card p-5">
-                    <img src="assets/img/casa/cozinha2.jpeg" alt="cozinha" class="d-block w-100">
-                </div>
-                <h4 class="heading text-center text-uppercase">Quato de estudos</h4>
-                <div class="col-12 col-md-4 xm-card p-5">
-                    <img src="assets/img/casa/q_estudos1.jpeg" alt="quarto de estudos" class="d-block w-100">
-                </div>
-                <div class="col-12 col-md-4 xm-card p-5">
-                    <img src="assets/img/casa/q_estudos2.jpeg" alt="quarto de estudos" class="d-block w-100">
-                </div>
-                <h4 class="heading text-center text-uppercase">Quartos</h4>
-                <div class="col-12 col-md-4 xm-card p-5">
-                    <img src="assets/img/casa/q1.jpeg" alt="quarto 1" class="d-block w-100">
-                </div>
-                <div class="col-12 col-md-4 xm-card p-5">
-                    <img src="assets/img/casa/q2.jpeg" alt="quarto 2" class="d-block w-100">
-                </div>
-                <div class="col-12 col-md-4 xm-card p-5">
-                    <img src="assets/img/casa/q3.jpeg" alt="quarto 3" class="d-block w-100">
-                </div>
-                <div class="col-12 col-md-4 xm-card p-5">
-                    <img src="assets/img/casa/q4.jpeg" alt="quarto 4" class="d-block w-100">
-                </div>
-                <div class="col-12 col-md-4 xm-card p-5">
-                    <img src="assets/img/casa/q5.jpeg" alt="quarto 5" class="d-block w-100">
-                </div>
-                <div class="col-12 col-md-4 xm-card p-5">
-                    <img src="assets/img/casa/q6.jpeg" alt="quarto 6" class="d-block w-100">
-                </div>
-                <h4 class="heading text-center text-uppercase">Banheiros</h4>
-                <div class="col-12 col-md-4 xm-card p-5">
-                    <img src="assets/img/casa/b1.jpeg" alt="banheiro individual 1" class="d-block w-100">
-                </div>
-                <div class="col-12 col-md-4 xm-card p-5">
-                    <img src="assets/img/casa/b2.jpeg" alt="banheiro individual 2" class="d-block w-100">
-                </div>
-                <div class="col-12 col-md-6 xm-card p-5 text-center">
-                    <img src="assets/img/casa/vestiario.jpeg" alt="vestiario" class="d-block w-100">
-                </div>
-                <h6> </h6>
-                <div class="col-12 col-md-4 xm-card p-5">
-                    <h4 class="heading text-center text-uppercase">Hall</h4>
-                    <img src="assets/img/casa/hall.jpeg" alt="hall" class="d-block w-100">
-                </div>
-                <div class="col-12 col-md-4 xm-card p-5">
-                    <h4 class="heading text-center text-uppercase">Lavanderia</h4>
-                    <img src="assets/img/casa/lavanderia.jpeg" alt="Lavanderia" class="d-block w-100">
-                </div>
-            </div>
-        </div>  
     </section>
     <!-- Seção sobre vagas e fotos da casa -->
     <section class="page-section bg-secondary-gray text-white mt-5 mb-0" id="calouros">
@@ -881,6 +907,18 @@
     <!-- Footer / Contatos -->
     <footer class="page-section text-center bg-secondary-gray text-white" id="contatos">
         <div class="container">
+            <h3 class="heading">Nossa localização no Google Maps:</h3>
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d233.727447142847!2d-43.514499815356764!3d-20.397762774056535!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2af823ef73ae3ced!2sRep%C3%BAblica%20Xeque-Mate!5e0!3m2!1spt-BR!2sbr!4v1657790541397!5m2!1spt-BR!2sbr" 
+                    width="100%" 
+                    max-width="600" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade"
+                >
+                </iframe>
             <div class="divider-custom divider-light">
                 <div class="divider-custom-line"></div>
                 <div class="divider-custom-icon"><i class="fa-solid fa-chess-king"></i></div>
@@ -903,8 +941,10 @@
                     <h4 class="heading text-uppercase mb-4">Localização</h4>
                     <div class="article mb-0 text-center">
                         <p>
-                            Rua Quatorze, 7C
+                            Rua Treze, 7
                             Bauxita. Ouro Preto - MG.
+                            <br>
+                            CEP: 35402-154
                         </p>
                     </div>
                 </div>
@@ -916,23 +956,11 @@
                     <a class="btn btn-outline-light btn-social whatsapp mx-1" href="https://api.whatsapp.com/send?phone=5531983595261&amp" target="_blank"><i class="fab fa-whatsapp"></i></a>
                 </div>
             </div>
-            <h3 class="heading">Nossa localização no Google Maps:</h3>
-            <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d233.727447142847!2d-43.514499815356764!3d-20.397762774056535!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2af823ef73ae3ced!2sRep%C3%BAblica%20Xeque-Mate!5e0!3m2!1spt-BR!2sbr!4v1657790541397!5m2!1spt-BR!2sbr" 
-                width="100%" 
-                max-width="600" 
-                height="450" 
-                style="border:0;" 
-                allowfullscreen="" 
-                loading="lazy" 
-                referrerpolicy="no-referrer-when-downgrade"
-            >
-            </iframe>
         </div>
     </footer>
     <!-- Copyright -->
     <div class="py-4 bg-primary-gray text-center text-white">
-        <div class="container"><small>Copyright &copy; Xeque Mate 2022</small></div>
+        <div class="container"><small>Copyright &copy; Xeque Mate 2023</small></div>
     </div>
 
 
