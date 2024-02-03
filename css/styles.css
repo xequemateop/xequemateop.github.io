@@ -3,14 +3,16 @@
 @font-face {
   font-family: 'oldeEnglish';
   src: local(oldeEnglish), url(../assets/font/OldeEnglish.ttf);
+  /* Add additional formats if needed: woff, woff2, etc. */
 }
 
 :root {
-  --primary-gray: #151515;
-  --secondary-gray: #202020;
-  --primary-blue: rgb(70, 181, 254);
-  --primary-green: #25d366;
+  --primary: #151515; 
+  --secondary: #27333F;/* #51697F */
+  --green: #25d366;
+  --blue: rgb(70, 181, 254);
   --dark-green: #20c861;
+  --gold: #BF9673;
   --font-sans-serif: "Montserrat", -apple-system, BlinkMacSystemFont, "Roboto", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-monospace: "Roboto Mono","Nova Mono","Fira Code", monospace;
   --body-font-family: var(--font-sans-serif);
@@ -50,23 +52,34 @@ html, body {
 
 /* ========================================= Cores ========================================= */
 
-.bg-primary-gray {
-  background-color: var(--primary-gray) !important;
+.bg-primary {
+  background-color: var(--primary) !important;
 }
 
-.bg-secondary-gray {
-  background-color: var(--secondary-gray) !important;
+.bg-secondary {
+  background-color: var(--secondary) !important;
+}
+
+.bg-gold {
+  background-color: var(--gold) !important;
+}
+
+.border-gold {
+  border-color: var(--gold) !important;
 }
 
 /* ========================================= Navegação ========================================= */
 
-.navbar-nav .nav-item .nav-link.active, .navbar-nav .show>.nav-link {
-  color: var(--primary-blue);
+.nav-link {
+  color: #FFF !important;
 }
 
-.nav-link:hover, .dropdown-item:hover {
-  color: var(--primary-blue);
+
+.nav-link:hover,
+.dropdown-item:hover {
+  color: var(--gold) !important;
 }
+
 .dropdown-item:hover {
   background-color: inherit;
 }
@@ -91,7 +104,7 @@ html, body {
   font-size: 1.2rem;
   font-weight: bold;
   color: #FFF;
-  background-color: var(--primary-green);;
+  background-color: var(--green);;
   transition: all .6s;
 }
 .btn-xm a.btn-wpp:hover {
@@ -115,7 +128,7 @@ html, body {
 }
 
 .btn-social.facebook:hover, .btn-social.facebook:focus {
-  background-color: var(--primary-blue);
+  background-color: var(--blue);
 }
 .btn-social.instagram:hover, .btn-social.instagram:focus {
   background: #f09433; 
@@ -125,10 +138,18 @@ html, body {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
 }
 .btn-social.whatsapp:hover, .btn-social.whatsapp:focus {
-  background-color: var(--primary-green);
+  background-color: var(--green);
 }
 
 /* ========================================= Textos ========================================= */
+
+.more-text {
+  display: none;
+}
+
+.show-more .more-text {
+  display: inline;
+}
 
 .oldeEnglish {
   font-family: oldeEnglish;
@@ -136,6 +157,14 @@ html, body {
 
 .text-justify {
   text-align: justify;
+}
+
+.text-gold {
+  color: var(--gold) !important;
+}
+
+.text-secondary{
+  color: var(--secondary);
 }
 
 .list {
@@ -240,7 +269,6 @@ header.header {
   text-align: center; 
   padding:10px; 
   margin:10px; 
-  background: var(--secondary-gray); 
   color:#FFF;
 }
 .MultiCarousel .leftLst, .MultiCarousel .rightLst { 

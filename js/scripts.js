@@ -103,4 +103,18 @@ $(document).ready(function () {
         ResCarousel(ell, Parent, slide);
     }
 
+    
 });
+
+
+function toggleReadMore() {
+    var textContainer = document.getElementById("readMoreText");
+    textContainer.classList.toggle("show-more");
+
+    var button = textContainer.querySelector("#read-btn")
+    if (textContainer.classList.contains("show-more")) {
+        button.textContent = "Ler menos";
+      } else {
+        button.textContent = "Ler mais";
+    }
+}
