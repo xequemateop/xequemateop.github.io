@@ -148,4 +148,14 @@ function toggleReadMore() {
 function toggleCard(id) {
     var cardContent = document.getElementById(id);
     cardContent.classList.toggle("d-none");
+
+    var icon = document.getElementById(id + "-icon");
+
+    if (cardContent.classList.contains("d-none")){
+        icon.classList.remove("fa-chevron-up");
+        icon.classList.add("fa-chevron-down");
+    }else {
+        icon.classList.add("fa-chevron-up");
+        icon.classList.remove("fa-chevron-down");
+    }
 }
