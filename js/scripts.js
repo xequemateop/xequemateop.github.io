@@ -111,10 +111,15 @@ function toggleReadMore() {
     var textContainer = document.getElementById("readMoreText");
     textContainer.classList.toggle("show-more");
 
+    var alignament = textContainer.querySelector("#history-article");
+
     var button = textContainer.querySelector("#read-btn")
     if (textContainer.classList.contains("show-more")) {
         button.textContent = "Ler menos";
-      } else {
+        alignament.classList.add("col-lg-5");
+    } else {
         button.textContent = "Ler mais";
+        alignament.classList.remove("col-lg-5");
+
     }
 }
