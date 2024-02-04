@@ -144,3 +144,9 @@ function toggleReadMore() {
 
     }
 }
+
+function toggleCard(button) {
+    var cardContent = button.parentElement.nextElementSibling;
+    cardContent.classList.toggle("d-none");
+    button.classList.toggle("rotate-icon"); // Adiciona uma classe para rotacionar o ícone
+}
