@@ -134,12 +134,12 @@ function toggleReadMore() {
 
     var alignament = textContainer.querySelector("#history-article");
 
-    var button = textContainer.querySelector("#read-btn")
+    var button = textContainer.querySelector("#read-btn");
     if (textContainer.classList.contains("show-more")) {
-        button.textContent = "Ler menos";
+        button.innerHTML = `Ler menos <i class="fas fa-chevron-up mx-3"></i>`;
         alignament.classList.add("col-lg-5");
     } else {
-        button.textContent = "Ler mais";
+        button.innerHTML = `Ler mais <i class="fas fa-chevron-down  mx-3"></i>`;
         alignament.classList.remove("col-lg-5");
 
     }
