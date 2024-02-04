@@ -12,24 +12,25 @@ $(document).ready(function () {
     });
 
 
-    // Adicionando manipulação de toque
-    var startX;
+    var touchStartX = {};
 
-    $(itemsDiv).on('touchstart', function (e) {
-        startX = e.originalEvent.touches[0].clientX;
+    $('.MultiCarousel-inner').on('touchstart', function (e) {
+        var carouselId = $(this).parent().attr('id');
+        touchStartX[carouselId] = e.originalEvent.touches[0].clientX;
     });
 
-    $(itemsDiv).on('touchmove', function (e) {
+    $('.MultiCarousel-inner').on('touchmove', function (e) {
         e.preventDefault();
 
-        var deltaX = e.originalEvent.touches[0].clientX - startX;
-        ResCarousel(deltaX > 0 ? 0 : 1, itemsMainDiv, 1); // Se deslizar para a direita, move para o item anterior; se deslizar para a esquerda, move para o próximo item.
+        var carouselId = $(this).parent().attr('id');
+        var deltaX = e.originalEvent.touches[0].clientX - touchStartX[carouselId];
+        ResCarousel(deltaX > 0 ? 0 : 1, '#' + carouselId, 1);
     });
 
-    $(itemsDiv).on('touchend', function () {
-        startX = null;
+    $('.MultiCarousel-inner').on('touchend', function () {
+        var carouselId = $(this).parent().attr('id');
+        touchStartX[carouselId] = null;
     });
-
 
     ResCarouselSize();
 
