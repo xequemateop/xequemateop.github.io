@@ -1,2 +1,2 @@
 # site
-https://xequemateop.github.io/site/
+https://xequemateop.github.io/
