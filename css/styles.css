@@ -265,10 +265,14 @@ header.header {
 .MultiCarousel .MultiCarousel-inner .item { 
   float: left;
 }
+.MultiCarousel .MultiCarousel-inner .item img {
+  max-height: 40vh;
+ }
+
 .MultiCarousel .MultiCarousel-inner .item > div { 
   text-align: center; 
   padding:2px; 
-  margin:10px; 
+  margin:10px;
   color:#FFF;
 }
 .MultiCarousel .leftLst, .MultiCarousel .rightLst { 
