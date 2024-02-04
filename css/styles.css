@@ -201,6 +201,9 @@ h6.heading {
   font-weight: 300;
   text-align: justify;  
 }
+a.github {
+  text-decoration: none;
+}
 
 /* ================================= Utilitaios Seções =================================  */
 
