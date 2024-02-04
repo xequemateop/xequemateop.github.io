@@ -11,6 +11,26 @@ $(document).ready(function () {
             click(1, this)
     });
 
+
+    // Adicionando manipulação de toque
+    var startX;
+
+    $(itemsDiv).on('touchstart', function (e) {
+        startX = e.originalEvent.touches[0].clientX;
+    });
+
+    $(itemsDiv).on('touchmove', function (e) {
+        e.preventDefault();
+
+        var deltaX = e.originalEvent.touches[0].clientX - startX;
+        ResCarousel(deltaX > 0 ? 0 : 1, itemsMainDiv, 1); // Se deslizar para a direita, move para o item anterior; se deslizar para a esquerda, move para o próximo item.
+    });
+
+    $(itemsDiv).on('touchend', function () {
+        startX = null;
+    });
+
+
     ResCarouselSize();
 
 
