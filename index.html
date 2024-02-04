@@ -15,8 +15,9 @@
     <!-- Font Awesome icons (free version)-->
     <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
     <!-- Google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
@@ -36,15 +37,24 @@
                 aria-controls="navbarSupportedContent"
                 aria-expanded="false"
                 aria-label="Toggle navigation"
+                id="navbarMainMenu"
             >
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div 
+                class="collapse navbar-collapse" 
+                id="navbarSupportedContent"
+            >
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link text-uppercase" aria-current="pagetop" href="#pagetop">Inicio</a>
+                        <a 
+                            class="nav-link text-uppercase" 
+                            aria-current="pagetop" 
+                            href="#pagetop">
+                            Inicio
+                        </a>
                     </li>
-                    <li class="nav-item dropdown">
+                    <li class="nav-item dropdown" id="dropdown">
                         <a
                             class="nav-link dropdown-toggle text-uppercase"
                             href="#"
@@ -56,24 +66,38 @@
                             A república
                         </a>
                         <ul class="dropdown-menu dropdown-menu-dark bg-primary" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item text-uppercase" href="#historia">História</a></li>
-                            <li><a class="dropdown-item text-uppercase" href="#moradores">Moradores</a></li>
-                            <li>
-                                <a class="dropdown-item text-uppercase" href="#exalunos">Ex-alunos</a>
+                            <li class="nav-item">
+                                <a class="dropdown-item text-uppercase" href="#historia" onclick="closeMenu()">
+                                    História
+                                </a>
                             </li>
-                            <li>
-                                <a class="dropdown-item text-uppercase" href="#casa">A casa</a>
+                            <li class="nav-item">
+                                <a class="dropdown-item text-uppercase" href="#moradores" onclick="closeMenu()">
+                                    Moradores
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="dropdown-item text-uppercase" href="#exalunos" onclick="closeMenu()">Ex-alunos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="dropdown-item text-uppercase" href="#casa" onclick="closeMenu()">
+                                    A casa
+                                </a>
                             </li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-uppercase text-nowrap" href="#calouros">Vagas</a>
+                        <a class="nav-link text-uppercase text-nowrap" href="#calouros" onclick="closeMenu()">
+                            Vagas
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-uppercase" href="#hospedagem">Hospedagem</a>
+                        <a class="nav-link text-uppercase" href="#hospedagem" onclick="closeMenu()">
+                            Hospedagem
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-uppercase" href="#contatos">Contatos</a>
+                        <a class="nav-link text-uppercase" href="#contatos" onclick="closeMenu()">Contatos</a>
                     </li>
                 </ul>
             </div>
